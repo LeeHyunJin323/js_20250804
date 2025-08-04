@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 필터를 이용한 특수 효과 지정하기 */
+
+
+.tee{
+  width: 400px;
+  height: 70px;
+  
+}
+
+div{
+  border: 1px solid #ddd;
+  width: 600px;
+}
+

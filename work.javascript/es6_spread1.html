@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<!-- <script defer src="js/es6_let_const.js">-->
+<script>
+
+    const arr = [1, 2, 3];
+    // console.log(arr); //(3) [1,2,3]
+    // spread operator
+    console.log(...arr);
+
+
+
+    //배열 연결하면서 배열객체로 추가
+    const num1 = [10, 20, 30, arr];
+    //배열 연결하면서 배열원소로 추가
+    const num2 = [10, 20, 30, ...arr];
+    console.log(num1); // [10, 20, 30, Array(3)]
+    console.log(num2);
+
+
+
+    //배열 중간 추가
+    const num3 = [10, 20, arr, 30];
+    console.log(num3);
+    const num4 = [10, 20, ...arr, 30];
+    console.log(num4);
+
+
+    const num5 = [arr];
+    console.log(num5);
+
+
+    const num6 = [...arr];
+    console.log(num6);
+
+
+    const num7 = [arr, num1];
+    console.log(num7); // [Array(3), Array(4)]
+
+    const num8 = [...arr, ...num1];
+    console.log(num8); 
+
+
+
+    
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

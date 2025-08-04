@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<!-- <script defer src="js/es6_let_const.js">-->
+<script>
+    let arr = ["홍길동","이순신","홍길자","김철수"];
+    let n1 = arr[0]; 
+    let n2 = arr[3]; 
+    console.log(n1,n2); // 홍길동 김철수
+
+
+    //배열 객체의 위치요소 반환받아서 a,b,c,d 변수에 저장
+    // destructuring : 구조분해할당 
+    // let[a,b,c,d] = arr;
+    // console.log(a,b,c,d);
+    
+    // let[m1,,,m2] = arr;
+    // console.log(m1,m2);
+    
+
+    //  console.log(arr);
+
+    // for(var i = 0; i < arr.length; i++){
+        // console.log(arr[i]);
+        // }
+
+
+        // arr 배열객체를 배열우너소로 받아서 x 배열객체로 출력
+        // let[...x] = arr;
+        // console.log(x);
+
+        // all : 2개 원소를 배열객체로 출력
+        let[k1,k2,...all] = arr;
+        console.log(k1,k2,all);
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

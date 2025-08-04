@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    var count = 0;
+
+    //함수 호출
+    myFnc(); //호이스팅
+    
+    // 함수 구현
+    function myFnc(){ //일반 함수
+        count++;
+        document.write("hello"+ count , "<br>");
+    }
+    
+    //함수 호출
+    
+
+    // for(var i = 0; i<200; i++)
+    // {
+        myFnc(); 
+        
+        // }
+        
+        theFun(); // 익명함수 호출은 오류 발생(호이스팅 안됨)
+        
+        // 함수 구현
+        // function myFnc(){ //일반 함수
+        var theFun = function myFnc(){ //익명 함수
+            count++;
+            document.write("hello"+ count , "<br>");
+        }
+        
+        
+        theFun(); 
+
+  
+    
+
+
+</script>
+<body>
+    
+</body>
+</html>

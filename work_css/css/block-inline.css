@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+/* 테두리 지정하기 */
+p{
+
+  border: 1px solid red;
+  height: 100px;
+   
+}
+
+strong, em{
+  border: 1px solid blue;
+  height: 50px;
+
+  /* display: block; */
+  /* display: inline; */
+  display: inline-block;
+
+}
+
+

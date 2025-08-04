@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ 
+    
+</style>
+<script>
+
+    var num = 100;
+
+    function menu() {
+        num+=100;
+        console.log("@# num1=>" + num); 
+        
+    }
+    //함수 호출시 같은 이름인 경우 제일 마지막께 호출
+    // @# num1=>200
+    // @# num2===>200
+
+    menu(); 
+    
+    function menu() {
+        num+=100;
+        console.log("@# num2=>" + num); 
+        
+    }
+
+    function menu() {
+        num+=100;
+        console.log("@# num3=>" + num); 
+        
+    }
+    
+</script>
+<body>
+
+</body>
+</html>

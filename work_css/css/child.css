@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 자손 선택자 */
+/* ul{
+    border: 1px solid blue;
+} */
+
+/* ul li{
+    border: 1px solid blue;
+} */
+
+/* 자식 선택자 */
+ul > li{
+    border: 1px solid blue;
+}
+
+
+
